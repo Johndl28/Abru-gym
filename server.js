@@ -11,7 +11,7 @@ app.use(express.json());
 // Servir archivos estáticos desde el directorio 'public'
 app.use(express.static(path.join(__dirname, 'public')));
 
-const uri = process.env.MONGODB_URI || 'mongodb+srv://calorieAdmin2:ABCDE1234@cluster0.mongodb.net/calorieTracker?retryWrites=true&w=majority';
+const uri = process.env.MONGODB_URI || 'mongodb+srv://abru_admin:abrupassword@cluster0.mongodb.net/calorieTracker?retryWrites=true&w=majority';
 const client = new MongoClient(uri, { serverSelectionTimeoutMS: 5000 });
 
 async function connectDB() {
